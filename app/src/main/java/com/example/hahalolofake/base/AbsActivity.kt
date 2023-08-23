@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.example.hahalolofake.base.utils.SystemUtil
+import com.example.hahalolofake.utils.SystemUtil
 import com.example.hahalolofake.component.ViewModelFactory
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject

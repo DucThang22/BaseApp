@@ -1,10 +1,9 @@
-package com.example.hahalolofake.base.utils
+package com.example.hahalolofake.utils
 
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.ConnectivityManager
-import android.os.Build
 import java.util.Locale
 
 object SystemUtil {
