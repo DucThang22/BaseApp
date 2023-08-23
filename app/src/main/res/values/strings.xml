@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BaseApp</string>
+
+    <string name="title_intro_1">Document Organization </string>
+    <string name="title_intro_2">PDF Viewing and Navigation</string>
+    <string name="title_intro_3">Sleek and User-Friendly Interface</string>
+
+    <string name="title_back_intro">Back</string>
+    <string name="intro_next">Next</string>
+
+    <string name="content_intro_1">Folder-based organization for managing multiple PDFs </string>
+    <string name="content_intro_2">Page navigation through swiping or using navigation buttons.</string>
+    <string name="content_intro_3">Our app boasts an intuitive interface that guides you through the conversion process step by step</string>
 </resources>

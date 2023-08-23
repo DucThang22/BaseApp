@@ -7,14 +7,16 @@ plugins {
 
 android {
     namespace 'com.example.hahalolofake'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.hahalolofake"
         minSdk 28
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "1.0.0"
+
+        multiDexEnabled true
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -29,6 +31,18 @@ android {
     buildFeatures {
         dataBinding = true
 
+    }
+
+    android {
+        sourceSets {
+            String sharedTestDir = 'src/sharedTest/java'
+            test {
+                java.srcDirs += sharedTestDir
+            }
+            androidTest {
+                java.srcDirs += sharedTestDir
+            }
+        }
     }
 
     compileOptions {
@@ -76,6 +90,12 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    // viewpager 2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+
+    // dots indicator
+    implementation "com.tbuonomo:dotsindicator:5.0"
 
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     testImplementation 'junit:junit:4.13.2'
