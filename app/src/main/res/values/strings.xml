@@ -11,4 +11,6 @@
     <string name="content_intro_1">Folder-based organization for managing multiple PDFs </string>
     <string name="content_intro_2">Page navigation through swiping or using navigation buttons.</string>
     <string name="content_intro_3">Our app boasts an intuitive interface that guides you through the conversion process step by step</string>
+
+    <string name="splash_title">This action can contain ads</string>
 </resources>
