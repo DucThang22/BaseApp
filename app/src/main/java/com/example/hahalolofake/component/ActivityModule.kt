@@ -1,6 +1,6 @@
 package com.example.hahalolofake.component
 
-import com.example.hahalolofake.ui.SplashActivity
+import com.example.hahalolofake.ui.splash.SplashActivity
 import com.example.hahalolofake.ui.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

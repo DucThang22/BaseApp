@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui
+package com.example.hahalolofake.ui.splash
 
 import android.os.Bundle
 import android.view.View
