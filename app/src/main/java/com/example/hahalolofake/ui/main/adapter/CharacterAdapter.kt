@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui.adapter
+package com.example.hahalolofake.ui.main.adapter
 
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter

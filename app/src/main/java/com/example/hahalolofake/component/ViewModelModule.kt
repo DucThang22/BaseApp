@@ -2,9 +2,7 @@ package com.example.hahalolofake.component
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.hahalolofake.component.ViewModelFactory
-import com.example.hahalolofake.component.ViewModelKey
-import com.example.hahalolofake.ui.MainActivityViewModel
+import com.example.hahalolofake.ui.main.MainActivityViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

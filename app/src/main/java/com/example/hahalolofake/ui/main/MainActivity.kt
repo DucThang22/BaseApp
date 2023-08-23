@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui
+package com.example.hahalolofake.ui.main
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hahalolofake.R
 import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.ActivityMainBinding
-import com.example.hahalolofake.ui.adapter.CharacterAdapter
+import com.example.hahalolofake.ui.main.adapter.CharacterAdapter
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

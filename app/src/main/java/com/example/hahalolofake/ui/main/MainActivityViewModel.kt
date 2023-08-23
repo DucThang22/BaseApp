@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui
+package com.example.hahalolofake.ui.main
 
 import android.util.Log
 import androidx.lifecycle.*
