@@ -3,8 +3,8 @@ package com.example.hahalolofake.ui
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.hahalolofake.base.utils.SystemUtil
 import com.example.hahalolofake.databinding.ActivitySplashBinding
+import com.example.hahalolofake.utils.SystemUtil
 
 @Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
