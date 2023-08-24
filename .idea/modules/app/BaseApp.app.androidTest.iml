@@ -261,5 +261,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:dagger:2.46" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout-solver:1.1.3" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="BaseApp.app.main" />
 </module>
