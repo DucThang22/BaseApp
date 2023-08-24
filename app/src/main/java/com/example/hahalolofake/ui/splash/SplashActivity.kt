@@ -64,7 +64,6 @@ class SplashActivity : AbsActivity<ActivitySplashBinding>() {
                 finish()
             }
         }
-
     }
 
 }
