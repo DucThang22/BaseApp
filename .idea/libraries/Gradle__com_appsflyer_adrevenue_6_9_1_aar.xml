@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.appsflyer:adrevenue:6.9.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aca369cfd3da0c74f9271c1b0acc2aa7/transformed/jetified-adrevenue-6.9.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aca369cfd3da0c74f9271c1b0acc2aa7/transformed/jetified-adrevenue-6.9.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aca369cfd3da0c74f9271c1b0acc2aa7/transformed/jetified-adrevenue-6.9.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appsflyer/adrevenue/6.9.1/ce06c0e653f6df4e6577956c406774fbc2541fb5/adrevenue-6.9.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

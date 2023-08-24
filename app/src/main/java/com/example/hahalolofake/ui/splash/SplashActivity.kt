@@ -1,10 +1,15 @@
 package com.example.hahalolofake.ui.splash
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hahalolofake.databinding.ActivitySplashBinding
+import com.example.hahalolofake.ui.main.MainActivity
+import com.example.hahalolofake.ui.multilang.MultiLangAct
 import com.example.hahalolofake.utils.SystemUtil
+import com.google.android.gms.ads.MobileAds
+import com.officetool.pdfreader.pdfviewer.utils.DeviceUtil
 
 @Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
@@ -15,12 +20,12 @@ class SplashActivity : AppCompatActivity() {
         SystemUtil.setLocale(this)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        MobileAds.initialize(this) {}
-//        binding.imgLaunch.postDelayed({
-//            SystemUtil.setPreLanguage(this,SystemUtil.getPreLanguage(this))
-//            SystemUtil.setLocale(this)
-//            openMainActivity()
-//        }, 3000)
+        MobileAds.initialize(this) {}
+        binding.imgLaunch.postDelayed({
+            SystemUtil.setPreLanguage(this,SystemUtil.getPreLanguage(this))
+            SystemUtil.setLocale(this)
+            openMainActivity()
+        }, 3000)
         hideSystemUI()
     }
     private fun restorePrefData(): Boolean {
@@ -29,7 +34,23 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun openMainActivity() {
-
+        if (DeviceUtil.hasCameraPermission(this)){
+            if(restorePrefData()){
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }else{
+                startActivity(MultiLangAct.getIntent(this, 1))
+                finish()
+            }
+        }else{
+            if (restorePrefData()){
+//                startActivity(Intent(this, PermissionAct::class.java))
+                finish()
+            }else{
+                startActivity(MultiLangAct.getIntent(this, 1))
+                finish()
+            }
+        }
 
     }
 

@@ -4,13 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hahalolofake.data.models.IntroEntity
-import com.example.hahalolofake.databinding.CarouselItemBinding
+import com.example.hahalolofake.databinding.ItemIntroBinding
 
 class IntroAdapter(private val items: List<IntroEntity>) :
     RecyclerView.Adapter<IntroAdapter.CarouselViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarouselViewHolder {
-        val binding = CarouselItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemIntroBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CarouselViewHolder(binding)
     }
 
@@ -22,7 +22,7 @@ class IntroAdapter(private val items: List<IntroEntity>) :
         return items.size
     }
 
-    class CarouselViewHolder(val binding: CarouselItemBinding) :
+    class CarouselViewHolder(val binding: ItemIntroBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(model: IntroEntity) {
             binding.imageViewCarouselItem.setImageResource(model.icon ?: 0)
