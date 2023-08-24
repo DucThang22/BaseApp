@@ -17,7 +17,6 @@ abstract class AbsActivity <DB : ViewDataBinding> : DaggerAppCompatActivity() {
     lateinit var binding: DB
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        SystemUtil.setLocale(this)
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, getContentView())
         bindViewModel()
@@ -35,4 +34,9 @@ abstract class AbsActivity <DB : ViewDataBinding> : DaggerAppCompatActivity() {
 
     abstract fun getContentView(): Int
     abstract fun bindViewModel()
+    override fun onStop() {
+        super.onStop()
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+    }
 }
