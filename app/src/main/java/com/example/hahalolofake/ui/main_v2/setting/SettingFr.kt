@@ -10,7 +10,7 @@ import com.example.hahalolofake.base.AbsFragment
 import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.FragmentSettingBinding
 import com.example.hahalolofake.ui.main.MainActivity
-import com.example.hahalolofake.ui.multilang.MultiLangAct
+import com.example.hahalolofake.ui.multi_lang.MultiLangAct
 import com.example.hahalolofake.ui.main_v2.setting.dialog_rate.DialogRating
 import com.google.android.play.core.review.ReviewInfo
 import com.google.android.play.core.review.ReviewManager

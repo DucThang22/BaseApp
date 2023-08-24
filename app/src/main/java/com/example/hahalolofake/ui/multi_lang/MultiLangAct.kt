@@ -1,17 +1,14 @@
-package com.example.hahalolofake.ui.multilang
+package com.example.hahalolofake.ui.multi_lang
 
 import android.content.Context
 import android.content.Intent
 import android.view.View
-import androidx.activity.viewModels
 import com.example.hahalolofake.R
 import com.example.hahalolofake.base.AbsActivity
 import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.ActivityMultilangBinding
 import com.example.hahalolofake.ui.intro.IntroAct
-import com.example.hahalolofake.ui.main.MainActivityViewModel
-import com.example.hahalolofake.ui.main_v2.MainActivityV2
-import com.example.hahalolofake.ui.multilang.adapter.MultiLangAdapter
+import com.example.hahalolofake.ui.multi_lang.adapter.MultiLangAdapter
 import com.example.hahalolofake.utils.SystemUtil
 import javax.inject.Inject
 
@@ -73,7 +70,7 @@ class MultiLangAct @Inject constructor()  : AbsActivity<ActivityMultilangBinding
     }
 
     private fun getPosition(): Int {
-        val pref = applicationContext.getSharedPreferences("myPref", MODE_PRIVATE)
+        val pref = baseContext.getSharedPreferences("myPref", MODE_PRIVATE)
         return pref.getInt("positionLang", 0)
     }
 }

@@ -2,12 +2,12 @@ package com.example.hahalolofake.component
 
 import androidx.paging.ExperimentalPagingApi
 import com.example.hahalolofake.ui.intro.IntroAct
-import com.example.hahalolofake.ui.splash.SplashActivity
 import com.example.hahalolofake.ui.main.MainActivity
 import com.example.hahalolofake.ui.main_v2.MainActivityV2
 import com.example.hahalolofake.ui.main_v2.MainV2Module
-import com.example.hahalolofake.ui.multilang.MultiLangAct
+import com.example.hahalolofake.ui.multi_lang.MultiLangAct
 import com.example.hahalolofake.ui.permission.PermissionAct
+import com.example.hahalolofake.ui.splash.SplashActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -20,6 +20,7 @@ abstract class ActivityModule {
 
     @ContributesAndroidInjector
     abstract fun contributeSplashActivity(): SplashActivity
+
     @ContributesAndroidInjector
     abstract fun contributeMultiLangAct(): MultiLangAct
 

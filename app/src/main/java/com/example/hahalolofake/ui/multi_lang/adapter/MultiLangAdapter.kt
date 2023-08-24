@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui.multilang.adapter
+package com.example.hahalolofake.ui.multi_lang.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
