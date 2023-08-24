@@ -4,16 +4,13 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.hahalolofake.R
 import com.example.hahalolofake.base.AbsActivity
-import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.ActivityMainV2Binding
 import com.example.hahalolofake.ui.main_v2.home.HomeFr
 import com.example.hahalolofake.ui.main_v2.setting.SettingFr
 import javax.inject.Inject
 
-class MainActivityV2 @Inject constructor() :AbsActivity<ActivityMainV2Binding>(){
+class MainActivityV2 @Inject constructor() : AbsActivity<ActivityMainV2Binding>() {
 
-    @Inject
-    lateinit var viewModelFactory: ViewModelFactory
     override fun initView() {
         replaceFragment(HomeFr())
     }
@@ -40,6 +37,7 @@ class MainActivityV2 @Inject constructor() :AbsActivity<ActivityMainV2Binding>()
             true
         }
     }
+
     private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()

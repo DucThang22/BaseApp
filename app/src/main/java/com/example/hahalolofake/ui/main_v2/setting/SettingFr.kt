@@ -20,8 +20,6 @@ import javax.inject.Inject
 
 class SettingFr @Inject constructor(): AbsFragment<FragmentSettingBinding>() {
 
-    @Inject
-    lateinit var viewModelFactory: ViewModelFactory
     private var manager: ReviewManager? = null
     private var reviewInfo: ReviewInfo? = null
     override fun getLayoutRes(): Int {

@@ -12,7 +12,7 @@ import javax.inject.Inject
 abstract class AbsActivity <DB : ViewDataBinding> : DaggerAppCompatActivity() {
 
     @Inject
-    lateinit var factory: ViewModelFactory
+    lateinit var viewModelFactory: ViewModelFactory
 
     lateinit var binding: DB
 

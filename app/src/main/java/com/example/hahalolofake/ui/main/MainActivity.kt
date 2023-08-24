@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hahalolofake.R
+import com.example.hahalolofake.base.AbsActivity
 import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.ActivityMainBinding
 import com.example.hahalolofake.ui.main.adapter.CharacterAdapter
@@ -14,12 +15,7 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class MainActivity @Inject constructor() : DaggerAppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
-
-    @Inject
-    lateinit var viewModelFactory: ViewModelFactory
+class MainActivity @Inject constructor() : AbsActivity<ActivityMainBinding>() {
 
     private val viewModel: MainActivityViewModel by viewModels {
         viewModelFactory
@@ -29,26 +25,30 @@ class MainActivity @Inject constructor() : DaggerAppCompatActivity() {
         CharacterAdapter()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        initView()
-        initData()
-    }
-
-    private fun initView() {
+     override fun initView() {
         binding.recycleView.layoutManager =
             LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
         binding.recycleView.adapter = characterAdapter
+         viewModel.page.value = 1
+         lifecycleScope.launch {
+             viewModel.results.collectLatest {
+                 characterAdapter.submitData(it)
+             }
+         }
+    }
+
+    override fun initAction() {
+    }
+
+    override fun getContentView(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun bindViewModel() {
 
     }
 
     private fun initData() {
-        viewModel.page.value = 1
-        lifecycleScope.launch {
-            viewModel.results.collectLatest {
-                characterAdapter.submitData(it)
-            }
-        }
+
     }
 }

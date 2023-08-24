@@ -20,8 +20,6 @@ class HomeFr @Inject constructor(): AbsFragment<FragmentHomeBinding>() {
 
     private lateinit var toggle: ActionBarDrawerToggle
 
-    @Inject
-    lateinit var viewModelFactory: ViewModelFactory
     override fun getLayoutRes(): Int {
         return R.layout.fragment_home
     }

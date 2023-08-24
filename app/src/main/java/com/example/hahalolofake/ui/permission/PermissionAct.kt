@@ -22,8 +22,6 @@ import javax.inject.Inject
 
 class PermissionAct @Inject constructor() : AbsActivity<ActivityPermissionBinding>() {
 
-    @Inject
-    lateinit var viewModelFactory: ViewModelFactory
     override fun initView() {
     }
 
