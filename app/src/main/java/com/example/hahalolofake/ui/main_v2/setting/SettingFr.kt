@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui.setting
+package com.example.hahalolofake.ui.main_v2.setting
 
 import android.content.Intent
 import android.net.Uri
@@ -11,7 +11,7 @@ import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.FragmentSettingBinding
 import com.example.hahalolofake.ui.main.MainActivity
 import com.example.hahalolofake.ui.multilang.MultiLangAct
-import com.example.hahalolofake.ui.setting.dialog_rate.DialogRating
+import com.example.hahalolofake.ui.main_v2.setting.dialog_rate.DialogRating
 import com.google.android.play.core.review.ReviewInfo
 import com.google.android.play.core.review.ReviewManager
 import com.google.android.play.core.review.ReviewManagerFactory

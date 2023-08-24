@@ -5,6 +5,7 @@ import com.example.hahalolofake.ui.intro.IntroAct
 import com.example.hahalolofake.ui.splash.SplashActivity
 import com.example.hahalolofake.ui.main.MainActivity
 import com.example.hahalolofake.ui.main_v2.MainActivityV2
+import com.example.hahalolofake.ui.main_v2.MainV2Module
 import com.example.hahalolofake.ui.multilang.MultiLangAct
 import com.example.hahalolofake.ui.permission.PermissionAct
 import dagger.Module
@@ -28,6 +29,6 @@ abstract class ActivityModule {
     @ContributesAndroidInjector
     abstract fun contributePermissionAct(): PermissionAct
 
-    @ContributesAndroidInjector(modules = [FragmentModule::class])
+    @ContributesAndroidInjector(modules = [MainV2Module::class])
     abstract fun contributeMainActivityV2(): MainActivityV2
 }

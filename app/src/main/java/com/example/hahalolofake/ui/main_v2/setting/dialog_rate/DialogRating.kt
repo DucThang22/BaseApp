@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui.setting.dialog_rate
+package com.example.hahalolofake.ui.main_v2.setting.dialog_rate
 
 import android.annotation.SuppressLint
 import android.app.Dialog

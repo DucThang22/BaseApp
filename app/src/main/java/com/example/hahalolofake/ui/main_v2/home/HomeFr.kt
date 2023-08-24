@@ -1,4 +1,4 @@
-package com.example.hahalolofake.ui.home
+package com.example.hahalolofake.ui.main_v2.home
 
 import android.content.Context
 import android.content.Intent
@@ -13,7 +13,7 @@ import com.example.hahalolofake.base.AbsFragment
 import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.FragmentHomeBinding
 import com.example.hahalolofake.ui.main_v2.MainActivityV2
-import com.example.hahalolofake.ui.setting.SettingFr
+import com.example.hahalolofake.ui.main_v2.setting.SettingFr
 import javax.inject.Inject
 
 class HomeFr @Inject constructor(): AbsFragment<FragmentHomeBinding>() {

@@ -6,8 +6,8 @@ import com.example.hahalolofake.R
 import com.example.hahalolofake.base.AbsActivity
 import com.example.hahalolofake.component.ViewModelFactory
 import com.example.hahalolofake.databinding.ActivityMainV2Binding
-import com.example.hahalolofake.ui.home.HomeFr
-import com.example.hahalolofake.ui.setting.SettingFr
+import com.example.hahalolofake.ui.main_v2.home.HomeFr
+import com.example.hahalolofake.ui.main_v2.setting.SettingFr
 import javax.inject.Inject
 
 class MainActivityV2 @Inject constructor() :AbsActivity<ActivityMainV2Binding>(){
